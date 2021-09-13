@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 
 const Dashboard = ({ id }) => {
   return (
-    <div style={{ height: "100vh" }} className="d-flex">
+    <div style={{ height: "100vh" , backgroundColor: '#4a4a4a'}} className="d-flex">
       <SideBar id={id} />
     </div>
   );
