@@ -35,11 +35,17 @@ export const ConversationsProvider = ({ children }) => {
     return { ...conversation, recipients, selected: index === selectedConversation };
   });
 
+  const sendMessage = (recepients, message) => {
+    console.log(recepients)
+    console.log(message)
+  }
+
   const handleConversationSelect = index => setSelectedConversation(index)
   const contextData = {
     conversations: formattedConversations,
     activeConversation: formattedConversations[selectedConversation],
     createConversation,
+    sendMessage,
     selectConversation: handleConversationSelect
   };
   return (
