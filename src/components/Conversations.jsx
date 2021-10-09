@@ -4,6 +4,7 @@ import { useConversations } from "../contexts/conversations";
 
 const Conversations = () => {
   const { conversations, selectConversation } = useConversations();
+  console.log(conversations, 'cons')
   return (
     <ListGroup variant="flush">
       {conversations.map((conversation, index) => (
